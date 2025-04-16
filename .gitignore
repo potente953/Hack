@@ -1,18 +1,22 @@
-# Build and Release Folders
-bin-debug/
-bin-release/
-[Oo]bj/
-[Bb]in/
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Envio de E-mail</title>
+</head>
+<body>
 
-# Other files and folders
-.settings/
+  <a href="#" onclick="enviarDados(pedrohenriquefa0112@gmail.com)">Enviar e-mail</a>
 
-# Executables
-*.swf
-*.air
-*.ipa
-*.apk
+  <form id="formEmail" action="https://exemplo.com/recebe.php" method="POST" style="display: none;">
+    <input type="hidden" name="email" value="pedrohenriquefa0112@gmail.com">
+  </form>
 
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
+  <script>
+    function enviarDados() {
+      document.getElementById("formEmail").submit();
+    }
+  </script>
+
+</body>
+</html>
